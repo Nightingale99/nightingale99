@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "TTLakes";
+    src: local("TTLakes-Regular"),
+      url("./fonts/TTLakes-Regular.woff2") format("woff2"),
+      url("./fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.page-header{
+    display: flex;
+    min-height: 88px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.page-main{
+    background-color: #F8F8F8;
+
+}
+
+h1{
+    font-family: "TTLakes", Helvetica, sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 12px;
+    color: #1B1C21;
+}
+
+.service-title{
+    display: flex;
+    align-items: center;
+}
+
+.slide-menu{
+    display: flex;
+    overflow: scroll;
+    margin-left: 12px;
+}
+
+.slide-menu__button{
+    font-family: "TTLakes", Helvetica, sans-serif;
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    border: 0;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    white-space: nowrap;
+    color: #7E7E82;
+    padding: 0 15px;
+}
+
+.slide-menu__button:first-child{
+    border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+}
+
+.slide-menu__button:active{
+    border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+}
+
+.about-service{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.about-service__text{
+    font-family: "TTLakes", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+
+}
+
+
+
+.mobile-hidden{
+    display: none;
+}
+
+.about-service__read-next{
+    display: inline-block;
+    font-family: "TTLakes", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    color: #1B1C21;
+    margin-top: 10px;
+    }
+
+.about-service__read-next::before{
+    content: url(./img/expand.svg);
+    max-height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    
+}
+
+.service-image{
+    margin-top: 10px;
+}
+.service-image__image{
+    max-width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.notebook_hidden{
+    display: none;
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+    .page-footer{
+        min-height: 10px;
+        background-color:#F8F8F8;
+    }
+
+    .page-header{
+        justify-content: stretch;
+    }
+
+    .page-header__menu-icon{
+        margin-left: 3%;
+    }
+
+    .layout-helper{
+        width: 21%;
+    }
+
+    .mobile-hidden{
+        display: inline-block;
+    }
+
+    .service-image{
+        width: 50%
+    }
+    .service-image__image{
+        float: right;
+        border-radius: 6px;
+        margin-right: 1em;
+    }
+
+
+    .read-next{
+        display: flex;
+        width: 50%;
+    }
+
+    .about-service__since-year{
+        margin-top: 20px;
+    }
+
+    .layout-desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-service{
+        max-width: 40%;
+    }
+
+}
+
+@media(min-width: 769px){
+    .desktop-hidden{
+        display: none;
+    }
+
+    .mobile-hidden{
+        display: inline-block;
+    }
+    
+    .notebook_hidden{
+        display: inline-block;
+    }
+
+    .slide-menu{
+        overflow:hidden;
+        flex-wrap: wrap;
+        margin-left: 3em;
+    }
+    .page-footer{
+        min-height: 100px;
+        background-color:#F8F8F8;
+    }
+
+    .service-image{
+        width: 50%
+    }
+
+    .service-image__image{
+        float: right;
+        border-radius: 6px;
+        margin-right: 2em;
+    }
+
+    .about-service__since-year{
+        margin-top: 20px;
+    }
+
+    .about-service{
+        max-width: 40%;
+    }
+
+    .layout-desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .service-title{
+
+        font-family: "TTLakes", Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        align-content: center;
+    }
+
+    .icon-label{
+        padding-right: 20px;
+    }
+
+    .page-header__menu-icon{
+        margin-left: 15px;
+    }
+    
+    .service-title h1{
+        display: inline-block;
+    }
+
+    .grid-helper{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 3%;
+    }
+
+    .page-header__menu-icon{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+}
